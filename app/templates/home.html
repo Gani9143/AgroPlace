@@ -1,0 +1,423 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+<main class="offcanvas-enabled" style="padding-top: 4rem;">
+
+    <section class="ps-lg-4 pe-lg-3 pt-4">
+        <div class="px-3 pt-1">
+
+            <div id="slides-shop" class="cover-slides">
+                <ul class="slides-container">
+                    <li class="text-center">
+                        <img src={% static 'images/banner-01.jpg'%} alt="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="m-b-20" data-translate="welcome_title"></h1>
+                                    <p class="m-b-40" data-translate="welcome_subtitle1"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="text-center">
+                        <img src={% static 'images/banner-02.jpg'%} alt="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="m-b-20" data-translate="welcome_title"></h1>
+                                    <p class="m-b-40" data-translate="welcome_subtitle2"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="text-center">
+                        <img src={% static 'images/banner-03.jpg'%} alt="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="m-b-20" data-translate="welcome_title"></h1>
+                                    <p class="m-b-40" data-translate="welcome_subtitle3"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="slides-navigation">
+                    <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <section class="pt-5 pb-4">
+                <!-- Heading-->
+                <div class="row">
+                </div>
+            </section>
+
+            <!-- Direct B2B Linkage Section -->
+            <section class="pt-5 pb-5" style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-radius: 15px; padding: 3rem !important;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h2 class="display-5 fw-bold mb-4" style="color: #1b5e20;" data-translate="b2b_title">Direct B2B Linkage</h2>
+                            <p class="fs-5 mb-3" style="color: #2e7d32;" data-translate="b2b_description">
+                            </p>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="card border-0" style="background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                                        <div class="card-body text-center p-3">
+                                            <i class="fa fa-leaf" style="font-size: 2.5rem; color: #388e3c;"></i>
+                                            <h6 class="fw-bold mt-2 mb-1" data-translate="farmers">Farmers</h6>
+                                            <small class="text-muted" data-translate="list_harvest">List harvest directly</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card border-0" style="background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                                        <div class="card-body text-center p-3">
+                                            <i class="fa fa-building" style="font-size: 2.5rem; color: #1565c0;"></i>
+                                            <h6 class="fw-bold mt-2 mb-1" data-translate="retailers">Retailers</h6>
+                                            <small class="text-muted" data-translate="find_stock">Find fresh stock</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card border-0" style="background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                                        <div class="card-body text-center p-3">
+                                            <i class="fa fa-industry" style="font-size: 2.5rem; color: #f57c00;"></i>
+                                            <h6 class="fw-bold mt-2 mb-1" data-translate="processors">Processors</h6>
+                                            <small class="text-muted" data-translate="bulk_sourcing">Bulk sourcing</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card border-0" style="background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                                        <div class="card-body text-center p-3">
+                                            <i class="fa fa-truck" style="font-size: 2.5rem; color: #c62828;"></i>
+                                            <h6 class="fw-bold mt-2 mb-1" data-translate="logistics">Logistics</h6>
+                                            <small class="text-muted" data-translate="transparent_rates">Transparent rates</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="{%url 'store:home'%}" class="btn btn-success btn-lg mt-4" style="padding: 0.8rem 2rem; border-radius: 50px;" data-translate="explore_b2b">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                                <h5 class="fw-bold mb-3" style="color: #1b5e20;" data-translate="b2b_benefits">Benefits of Direct B2B Linkage:</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3 d-flex align-items-start">
+                                        <span class="badge bg-success me-3" style="margin-top: 0.3rem;">✓</span>
+                                        <div>
+                                            <strong data-translate="no_middlemen">No Middlemen</strong>
+                                            <p class="text-muted small mb-0" data-translate="no_middlemen_desc">Direct connection means better prices for farmers</p>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-start">
+                                        <span class="badge bg-success me-3" style="margin-top: 0.3rem;">✓</span>
+                                        <div>
+                                            <strong data-translate="transparent_pricing">Transparent Pricing</strong>
+                                            <p class="text-muted small mb-0" data-translate="transparent_pricing_desc">See real-time market rates and buyer requirements</p>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-start">
+                                        <span class="badge bg-success me-3" style="margin-top: 0.3rem;">✓</span>
+                                        <div>
+                                            <strong data-translate="bulk_orders">Bulk Orders</strong>
+                                            <p class="text-muted small mb-0" data-translate="bulk_orders_desc">Planned harvesting based on buyer demand</p>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-start">
+                                        <span class="badge bg-success me-3" style="margin-top: 0.3rem;">✓</span>
+                                        <div>
+                                            <strong data-translate="quality_assurance">Quality Assurance</strong>
+                                            <p class="text-muted small mb-0" data-translate="quality_assurance_desc">Meet specific buyer grade requirements</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-start">
+                                        <span class="badge bg-success me-3" style="margin-top: 0.3rem;">✓</span>
+                                        <div>
+                                            <strong data-translate="lower_wastage">Lower Wastage</strong>
+                                            <p class="text-muted small mb-0" data-translate="lower_wastage_desc">Faster logistics reduces spoilage</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Powered Decision Making Section -->
+            <!-- Smart Supply Chain Section -->
+            <section class="pt-4 pb-4">
+                <div class="container">
+                    <div class="row g-3">
+                        <div class="col-lg-12">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h3 class="h4 mb-0" data-translate="smart_supply_title">Smart Supply Chain</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center p-4">
+                                    <i class="fa fa-shipping-fast" style="font-size: 2.2rem; color: #00796b;"></i>
+                                    <h5 class="fw-bold mt-3" data-translate="smart_supply_feature1">Automated Matching</h5>
+                                    <p class="text-muted small mb-0" data-translate="smart_supply_feature1_desc">Matches consignments with verified local transport owners instantly.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center p-4">
+                                    <i class="fa fa-route" style="font-size: 2.2rem; color: #f57c00;"></i>
+                                    <h5 class="fw-bold mt-3" data-translate="smart_supply_feature2">Route Optimization</h5>
+                                    <p class="text-muted small mb-0" data-translate="smart_supply_feature2_desc">Optimizes pickup & delivery to reduce time and spoilage.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center p-4">
+                                    <i class="fa fa-check-circle" style="font-size: 2.2rem; color: #2e7d32;"></i>
+                                    <h5 class="fw-bold mt-3" data-translate="smart_supply_feature3">Verified Carriers</h5>
+                                    <p class="text-muted small mb-0" data-translate="smart_supply_feature3_desc">Pre-vetted local carriers ensure safe and timely transit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 15px; padding: 2rem; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
+                                <h5 class="fw-bold mb-4" style="color: #01579b; font-size: 1.3rem;"><i class="fa fa-microchip" style="margin-right: 0.5rem;"></i>AI-Powered Intelligence</h5>
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <div class="text-center p-3" style="background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                                            <i class="fa fa-bar-chart" style="font-size: 2rem; color: #1565c0; margin-bottom: 0.5rem; display: block;"></i>
+                                            <h6 class="fw-bold mb-1" style="color: #0d47a1; font-size: 0.95rem;">Price Forecasting</h6>
+                                            <small class="text-muted">3-7 day predictions</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="text-center p-3" style="background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                                            <i class="fa fa-cloud" style="font-size: 2rem; color: #1565c0; margin-bottom: 0.5rem; display: block;"></i>
+                                            <h6 class="fw-bold mb-1" style="color: #0d47a1; font-size: 0.95rem;">Weather Alerts</h6>
+                                            <small class="text-muted">Real-time forecasts</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="text-center p-3" style="background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                                            <i class="fa fa-crosshairs" style="font-size: 2rem; color: #1565c0; margin-bottom: 0.5rem; display: block;"></i>
+                                            <h6 class="fw-bold mb-1" style="color: #0d47a1; font-size: 0.95rem;">Demand Matching</h6>
+                                            <small class="text-muted">Smart buyer pairing</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="text-center p-3" style="background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                                            <i class="fa fa-exchange" style="font-size: 2rem; color: #1565c0; margin-bottom: 0.5rem; display: block;"></i>
+                                            <h6 class="fw-bold mb-1" style="color: #0d47a1; font-size: 0.95rem;">Logistics Optimization</h6>
+                                            <small class="text-muted">Route efficiency</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 ps-lg-4">
+                            <h2 class="display-5 fw-bold mb-4" style="color: #0d47a1;">AI-Powered Decision Making</h2>
+                            <p class="fs-5 mb-4" style="color: #333;">
+                                AgriConnect 2.0 uses advanced machine learning algorithms to help farmers and buyers make data-driven decisions that maximize profitability and minimize risks.
+                            </p>
+                            <div class="mb-4">
+                                <h6 class="fw-bold mb-2" style="color: #01579b; font-size: 1.1rem;">For Farmers:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <span style="color: #1565c0; margin-right: 0.8rem; font-weight: bold;">→</span>
+                                        <span><strong>Optimal Harvest Timing</strong> - Know when to harvest for maximum price</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <span style="color: #1565c0; margin-right: 0.8rem; font-weight: bold;">→</span>
+                                        <span><strong>Crop Recommendations</strong> - Predictive yield analytics based on soil & weather</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <span style="color: #1565c0; margin-right: 0.8rem; font-weight: bold;">→</span>
+                                        <span><strong>Risk Mitigation</strong> - Early warnings for pest & disease outbreaks</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mb-4">
+                                <h6 class="fw-bold mb-2" style="color: #01579b; font-size: 1.1rem;">For Buyers:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <span style="color: #1565c0; margin-right: 0.8rem; font-weight: bold;">→</span>
+                                        <span><strong>Demand Forecasting</strong> - Predict market demand trends</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <span style="color: #1565c0; margin-right: 0.8rem; font-weight: bold;">→</span>
+                                        <span><strong>Supplier Scoring</strong> - Quality & reliability ratings from AI</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <span style="color: #1565c0; margin-right: 0.8rem; font-weight: bold;">→</span>
+                                        <span><strong>Price Recommendations</strong> - Fair pricing based on AI analysis</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="{%url 'about'%}" class="btn btn-primary btn-lg" style="padding: 0.8rem 2rem; border-radius: 50px;">
+                                Learn About Our AI <i class="ci-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+  <!-- How AgriConnect Works-->
+            <section class="pt-4 mb-4 mb-md-5">
+                <h2 class="h3 text-center mb-grid-gutter pt-2">How AgriConnect 2.0 Works</h2>
+                <div class="row g-0 bg-light rounded-3">
+                    <div class="col-xl-4 col-lg-12 col-md-4 border-end">
+                        <div class="py-3">
+                            <div class="d-flex align-items-center mx-auto py-3 px-3" style="max-width: 362px;">
+                                <div class="display-3 fw-normal opacity-15 me-4">01</div>
+                                <div class="ps-2"><img class="d-block my-2"
+                                        src="{% static 'img/grocery/steps/01.png' %}" width="72" alt="List Your Harvest">
+                                    <p class="mb-3 pt-1">Farmers list harvested crops directly with transparent pricing</p>
+                                </div>
+                            </div>
+                            <hr class="d-md-none d-lg-block d-xl-none">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-12 col-md-4 border-end">
+                        <div class="py-3">
+                            <div class="d-flex align-items-center mx-auto py-3 px-3" style="max-width: 362px;">
+                                <div class="display-3 fw-normal opacity-15 me-4">02</div>
+                                <div class="ps-2"><img class="d-block my-2"
+                                        src="{% static 'img/grocery/steps/02.png' %}" width="72"
+                                        alt="AI Price Forecasting">
+                                    <p class="mb-3 pt-1">Our AI predicts optimal selling prices 3-7 days in advance</p>
+                                </div>
+                            </div>
+                            <hr class="d-md-none d-lg-block d-xl-none">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-12 col-md-4">
+                        <div class="py-3">
+                            <div class="d-flex align-items-center mx-auto py-3 px-3" style="max-width: 362px;">
+                                <div class="display-3 fw-normal opacity-15 me-4">03</div>
+                                <div class="ps-2"><img class="d-block my-2"
+                                        src="{% static 'img/grocery/steps/03.png' %}" width="72" alt="Smart Logistics">
+                                    <p class="mb-3 pt-1">Automated logistics matching reduces post-harvest losses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="pt-5 pb-4">
+                <!-- Heading-->
+                <div class="d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4">
+                    <h2 class="h3 mb-0 pt-3 me-3">Freshly Harvested Products</h2>
+                    <div class="pt-3"><a class="btn btn-outline-accent btn-sm" href="{%url 'store:home'%}">Browse all<i
+                                class="ci-arrow-right ms-1 me-n1"></i></a></div>
+                </div>
+
+                <div class="row">
+                    {% for product in products %}
+
+                        <div class="col-lg-3 col-md-6 special-grid" >
+                            <div class="products-single fix">
+                                    <a class="card-img-top d-block overflow-hidden" href="{%url 'product-detail' product.id%}">
+                                        <img src="{{product.image.url}}" class="img-fluid" alt="Image" style="min-height: 250px; max-height: 250px;">
+                                    </a>
+                                <div class="why-text">
+                                    <a class="product-meta d-block fs-xs pb-1" href="#">{{product.category}}</a>
+                                    <h4 class="product-title fs-sm text-truncate ">
+                                        <a href="{%url 'product-detail' product.id%}">{{product.product_name}}</a>
+                                    </h4>
+                                    <h5> $ {{product.price}}</h5>
+
+                                    {% if request.user.user_role != 'farmer' and request.user.user_role != 'specialist' %}
+                                    <a href="{% url 'add-cart' product.id %}" class="cart">+<i
+                                            class="ci-cart fs-base ms-1"></i></a>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+        {% if request.user.user_role == 'buyer' %}
+                    <section class="pt-5 pb-4">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4">
+                            <h2 class="h3 mb-0 pt-3 me-3">Recommended Products</h2>
+                        </div>
+                        <div class="row">
+                            {% for product in recommended_products %}
+                                <div class="col-lg-3 col-md-6 special-grid">
+
+                                    <div class="products-single fix">
+                                        <a class="card-img-top d-block overflow-hidden"
+                                           href="{% url 'product-detail' product.id %}">
+                                            <img src="{{ product.image.url }}" class="img-fluid" alt="Image"
+                                                 style="min-height: 250px; max-height: 250px;">
+                                        </a>
+                                        <div class="why-text">
+                                            <a class="product-meta d-block fs-xs pb-1"
+                                               href="#">{{ product.category }}</a>
+                                            <h4 class="product-title fs-sm text-truncate ">
+                                                <a href="{% url 'product-detail' product.id %}">{{ product.product_name }}</a>
+                                            </h4>
+                                            <h5> $ {{ product.price }}</h5>
+
+                                            {% if request.user.user_role != 'farmer' and request.user.user_role != 'specialist' %}
+                                                <a href="{% url 'add-cart' product.id %}" class="cart">+<i
+                                                        class="ci-cart fs-base ms-1"></i></a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </section>
+                {% endif %}
+
+            <div class="pb-3"></div>
+            <div class="pb-3"></div>
+        </div>
+
+        <!-- ALL JS FILES -->
+        <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+        <script src="{% static 'js/popper.min.js'%}"></script>
+        <script src="{%static 'js/bootstrap.min.js'%}"></script>
+        <!-- ALL PLUGINS -->
+        <script src="{%static 'js/jquery.superslides.min.js'%}"></script>
+        <script src="{%static 'js/bootstrap-select.js'%}"></script>
+        <script src="{%static 'js/inewsticker.js'%}"></script>
+        <script src="{%static 'js/bootsnav.js'%}"></script>
+        <script src="{%static 'js/images-loded.min.js'%}"></script>
+        <script src="{%static 'js/isotope.min.js'%}"></script>
+        <script src="{%static 'js/owl.carousel.min.js'%}"></script>
+        <script src="{%static 'js/baguetteBox.min.js'%}"></script>
+        <script src="{%static 'js/form-validator.min.js'%}"></script>
+        <script src="{%static 'js/contact-form-script.js'%}"></script>
+        <script src="{%static 'js/custom.js'%}"></script>
+    </section>
+
+</main>
+
+
+{% endblock content %}

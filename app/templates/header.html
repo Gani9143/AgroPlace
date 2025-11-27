@@ -1,0 +1,169 @@
+{% load static %}
+
+<header class="bg-light shadow-sm fixed-top" data-fixed-element>
+    <div class="navbar navbar-expand-lg navbar-light py-1">
+        <div class="container-fluid">
+
+            <a class="navbar-brand  me-2" href="{%url 'home'%}">
+                <h3>AgriConnect 2.0</h3>
+            </a>
+             <a class="navbar-brand" href="{%url 'store:home'%}">
+                <h6 data-translate="products">Products</h6>
+            </a>
+
+            <a class="navbar-brand" href="{%url 'about'%}">
+                <h6 data-translate="about">About Us</h6>
+            </a>
+
+            <form class="input-group d-none d-lg-flex flex-nowrap mx-4" action="" class="search" style="width:40%;">
+                <i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                <input name="q" class="form-control rounded-start w-100" type="text" data-translate="search" value="{{ request.GET.q }}">
+{#                <select name="category" class="form-select flex-shrink-0" style="width: 14rem;">#}
+{#                    #}
+{#                    {% if request.GET.category %}#}
+{#                    <option>{{request.GET.category}}</option>#}
+{#                    {% else %}#}
+{#                    <option>All Category</option>#}
+{#                    {% endif %}#}
+{##}
+{#                    {% for i in links %}#}
+{#                    <option value="{{i.category_name}}">{{i.category_name}}</option>#}
+{#                    {% endfor %}#}
+{#                </select>#}
+            </form>
+
+            <!-- Multilanguage Dropdown -->
+            <div class="dropdown d-none d-lg-flex mx-3">
+                <button class="btn btn-sm btn-outline-success dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="ci-globe"></i> <span data-translate="language">Language</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="changeLanguage('hi')">हिंदी (Hindi)</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="changeLanguage('ta')">தமிழ் (Tamil)</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="changeLanguage('te')">తెలుగు (Telugu)</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="changeLanguage('kn')">ಕನ್ನಡ (Kannada)</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="changeLanguage('ml')">മലയാളം (Malayalam)</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center ms-xl-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideNav"><span
+                        class="navbar-toggler-icon"></span></button><a class="navbar-tool d-flex d-lg-none"
+                    href="#searchBox" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="searchBox"><span class="navbar-tool-tooltip">Search</span>
+                    <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-search"></i></div>
+                </a>
+
+
+                {% if user.is_authenticated %}
+{#                {% if true %}#}
+                <div class="navbar-tool me-3">
+                     <a class="navbar-tool-icon-box bg-secondary"
+                        href="{%url 'cart'%}"><span class="navbar-tool-label">{{cart_count}}</span><i
+                            class="navbar-tool-icon ci-cart"></i>
+                    </a>
+                </div>
+
+                <a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="{%url 'dashbord'%}">
+                    <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-user"></i></div>
+                    <div class="navbar-tool-text ms-n3"><small data-translate="hello">Hello,</small> {{request.user}}! <span data-translate="dashboard">Go to Dashboard</span></div>
+                </a>
+
+                <a class="btn btn-sm btn-danger rounded-1 ms-lg-4 ms-2" href="{%url 'logout'%}"><span data-translate="logout">Logout</span></a>
+
+                {%else%}
+
+                <a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="{%url 'login'%}">
+                    <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-user"></i></div>
+                    <div class="navbar-tool-text ms-n3"><small data-translate="hello">Hello,</small> <span data-translate="signin">Sign in</span> <span data-translate="account">My Account</span></div>
+                </a>
+
+                {% endif %}
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            // Store language preference in localStorage
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update UI text based on language
+            const languageMap = {
+                'en': {
+                    'search': 'Search for products',
+                    'products': 'Products',
+                    'about': 'About Us',
+                    'hello': 'Hello',
+                    'signin': 'Sign in',
+                    'account': 'My Account',
+                    'dashboard': 'Dashboard',
+                    'logout': 'Logout'
+                },
+                'hi': {
+                    'search': 'उत्पादों के लिए खोजें',
+                    'products': 'उत्पाद',
+                    'about': 'हमारे बारे में',
+                    'hello': 'नमस्ते',
+                    'signin': 'साइन इन',
+                    'account': 'मेरा खाता',
+                    'dashboard': 'डैशबोर्ड',
+                    'logout': 'लॉग आउट'
+                },
+                'ta': {
+                    'search': 'தயாரிப்புகளுக்கு தேடல்',
+                    'products': 'பொருட்கள்',
+                    'about': 'எங்களைப் பற்றி',
+                    'hello': 'வணக்கம்',
+                    'signin': 'உள்நுழைக',
+                    'account': 'என் खाता',
+                    'dashboard': 'கோட்டு பலகை',
+                    'logout': 'வெளியேறு'
+                },
+                'te': {
+                    'search': 'ఉత్పత్తుల కోసం సెర్చ్ చేయండి',
+                    'products': 'ఉత్పత్తులు',
+                    'about': 'మా గురించి',
+                    'hello': 'హలో',
+                    'signin': 'సైన్ ఇన్',
+                    'account': 'మా ఖాతా',
+                    'dashboard': 'డ్యాష్‌బోర్డ్',
+                    'logout': 'లాగ్ అవుట్'
+                },
+                'kn': {
+                    'search': 'ಉತ್ಪನ್ನಗಳಿಗಾಗಿ ಹುಡುಕಿ',
+                    'products': 'ಉತ್ಪನ್ನಗಳು',
+                    'about': 'ನಮ್ಮ ಬಗ್ಗೆ',
+                    'hello': 'ಹಲೋ',
+                    'signin': 'ಸೈನ್ ಇನ್',
+                    'account': 'ನನ್ನ ಖಾತೆ',
+                    'dashboard': 'ಡ್ಯಾಶ್‌ಬೋರ್ಡ್',
+                    'logout': 'ಲಾಗ್ ಔಟ್'
+                },
+                'ml': {
+                    'search': 'ഉൽപ്പന്നങ്ങൾക്കായി തിരയുക',
+                    'products': 'ഉൽപ്പന്നങ്ങൾ',
+                    'about': 'ഞങ്ങളെ കുറിച്ച്',
+                    'hello': 'ഹലോ',
+                    'signin': 'സൈൻ ഇൻ',
+                    'account': 'എന്റെ ഖാതം',
+                    'dashboard': 'ഡാഷ്ബോർഡ്',
+                    'logout': 'ലോഗ് ഔട്ട്'
+                }
+            };
+            
+            console.log('Language changed to:', lang);
+            // You can add more translation logic here or integrate with i18n library
+        }
+        
+        // Load saved language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            changeLanguage(savedLang);
+        });
+    </script>
+
+</header>

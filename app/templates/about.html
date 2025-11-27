@@ -1,0 +1,252 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+    <main class="offcanvas-enabled" style="padding-top: 4rem;">
+
+    <!-- Hero Section with Beautiful Gradient -->
+    <section class="py-5" style="background: linear-gradient(135deg, #1e7e34 0%, #2d5a3d 50%, #134d1f 100%); color: white;">
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div style="animation: fadeInLeft 1s ease-in;">
+                        <h1 class="display-4 fw-bold mb-4">
+                            <span style="color: #7dd87d;">Revolutionizing</span> India's Agricultural Future
+                        </h1>
+                        <p class="fs-5 mb-3 lead">AgriConnect 2.0 is an intelligent, hyper-local digital ecosystem designed to empower Tier 2/3 India farmers with AI-driven predictive insights and transparent direct B2B marketplace connections.</p>
+                        <div class="d-flex gap-3 mt-4">
+                            <div class="text-center" style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px; flex: 1;">
+                                <h3 class="text-success mb-1">15-20%</h3>
+                                <small>Income Increase</small>
+                            </div>
+                            <div class="text-center" style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px; flex: 1;">
+                                <h3 class="text-success mb-1">50-100km</h3>
+                                <small>Direct Reach</small>
+                            </div>
+                            <div class="text-center" style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px; flex: 1;">
+                                <h3 class="text-success mb-1">AI-Powered</h3>
+                                <small>Price Forecasting</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src={% static 'images/about-img.jpg'%} alt="AgriConnect 2.0" class="img-fluid rounded-4 shadow-lg" style="box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section with Beautiful Cards -->
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">The Challenge We're Solving</h2>
+                    <p class="fs-5 text-muted" style="max-width: 600px; margin: 0 auto;">Farmers in Tier 2/3 India face critical challenges that limit their income potential and sustainability.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" style="transition: transform 0.3s ease, box-shadow 0.3s ease; border-left: 4px solid #dc3545;">
+                        <div class="card-body p-4">
+                            <i class="fa fa-bar-chart" style="font-size: 3rem; color: #dc3545; margin-bottom: 1rem; display: block;"></i>
+                            <h4 class="card-title fw-bold mb-3">Market Opacity</h4>
+                            <p class="card-text text-muted">Excessive middlemen create non-transparent pricing, leaving farmers with minimal returns despite fair market values.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" style="transition: transform 0.3s ease, box-shadow 0.3s ease; border-left: 4px solid #ffc107;">
+                        <div class="card-body p-4">
+                            <i class="fa fa-trash" style="font-size: 3rem; color: #ffc107; margin-bottom: 1rem; display: block;"></i>
+                            <h4 class="card-title fw-bold mb-3">High Wastage</h4>
+                            <p class="card-text text-muted">Poor logistics and post-harvest management result in 15-25% post-harvest losses for perishable goods.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" style="transition: transform 0.3s ease, box-shadow 0.3s ease; border-left: 4px solid #fd7e14;">
+                        <div class="card-body p-4">
+                            <i class="fa fa-exclamation-triangle" style="font-size: 3rem; color: #fd7e14; margin-bottom: 1rem; display: block;"></i>
+                            <h4 class="card-title fw-bold mb-3">Uncertainty & Risk</h4>
+                            <p class="card-text text-muted">Farmers lack predictive data on weather and market demand, making cultivation planning a high-risk endeavor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution: Three-Layer Architecture -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Our Three-Layered Intelligent Solution</h2>
+                    <p class="fs-5 text-muted">Built from the ground up for Tier 2/3 India's unique agricultural ecosystem</p>
+                </div>
+            </div>
+            
+            <!-- Layer 1 -->
+            <div class="row g-4 mb-5 align-items-center">
+                <div class="col-lg-6">
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem; border-radius: 20px; color: white; min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                        <div class="text-center">
+                            <i class="fa fa-crosshairs" style="font-size: 5rem; color: white; margin-bottom: 1rem; display: block;"></i>
+                            <h3 class="fw-bold fs-4">Core Marketplace</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="fw-bold fs-4 mb-3">Direct B2B Linkage</h3>
+                    <p class="text-muted mb-3">Multilingual (vernacular) app connecting farmers directly to nearby retailers, bulk buyers, and processors within 50-100 km radius.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle" style="color: #28a745; font-size: 1.3rem; margin-right: 0.5rem;"></i><strong>Low-Bandwidth Design:</strong> Visual and voice-command interface for feature phones</li>
+                        <li class="mb-2"><i class="bi bi-check-circle" style="color: #28a745; font-size: 1.3rem; margin-right: 0.5rem;"></i><strong>Real-time Connections:</strong> Instant farmer-to-buyer matching</li>
+                        <li><i class="bi bi-check-circle" style="color: #28a745; font-size: 1.3rem; margin-right: 0.5rem;"></i><strong>Transparent Pricing:</strong> No hidden middleman margins</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Layer 2 -->
+            <div class="row g-4 mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 3rem; border-radius: 20px; color: white; min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                        <div class="text-center">
+                            <i class="fa fa-microchip" style="font-size: 5rem; color: white; margin-bottom: 1rem; display: block;"></i>
+                            <h3 class="fw-bold fs-4">Predictive Intelligence</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h3 class="fw-bold fs-4 mb-3">AI-Powered Decision Making</h3>
+                    <p class="text-muted mb-3">Our advanced machine learning models transform raw agricultural data into actionable insights for farmers.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle" style="color: #28a745; font-size: 1.3rem; margin-right: 0.5rem;"></i><strong>Price Forecasting:</strong> Predict optimal selling prices 3-7 days in advance</li>
+                        <li class="mb-2"><i class="bi bi-check-circle" style="color: #28a745; font-size: 1.3rem; margin-right: 0.5rem;"></i><strong>Satellite-Backed Advisory:</strong> Detect crop stress and pest outbreaks early</li>
+                        <li><i class="bi bi-check-circle" style="color: #28a745; font-size: 1.3rem; margin-right: 0.5rem;"></i><strong>Weather Alerts:</strong> Hyper-local weather data for better planning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Layer 3 -->
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 3rem; border-radius: 20px; color: white; min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                        <div class="text-center">
+                            <i class="fa fa-truck" style="font-size: 5rem; color: white; margin-bottom: 1rem; display: block;"></i>
+                            <h3 class="fw-bold fs-4">Automated Logistics</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="fw-bold fs-4 mb-3">Smart Supply Chain</h3>
+                    <p class="text-muted mb-3">Upon successful sale, our system automatically matches consignments with verified local transport owners.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle" style="color: #28a745; font-size: 1.3rem; margin-right: 0.5rem;"></i><strong>Seamless Integration:</strong> Automatic transport matching after sale</li>
+                        <li class="mb-2"><i class="bi bi-check-circle" style="color: #28a745; font-size: 1.3rem; margin-right: 0.5rem;"></i><strong>Transparent Charges:</strong> Fair logistics pricing based on distance</li>
+                        <li><i class="bi bi-check-circle" style="color: #28a745; font-size: 1.3rem; margin-right: 0.5rem;"></i><strong>Loss Reduction:</strong> Optimized routes minimize post-harvest losses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Statistics Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #1e7e34 0%, #2d5a3d 50%, #134d1f 100%); color: white;">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Real-World Impact for Tier 2/3 India</h2>
+                    <p class="fs-5">Quantifiable improvements across economic empowerment, sustainability, and scalability</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 text-center">
+                        <i class="fa fa-money" style="font-size: 4rem; color: white; margin-bottom: 1rem; display: block;"></i>
+                        <h4 class="fw-bold mb-3">Economic Empowerment</h4>
+                        <p class="fs-5"><strong>15-20%</strong> increase in net realized prices by bypassing middlemen</p>
+                        <p class="text-white-50">Direct boost to farmer income and household economic security</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 text-center">
+                        <i class="fa fa-leaf" style="font-size: 4rem; color: white; margin-bottom: 1rem; display: block;"></i>
+                        <h4 class="fw-bold mb-3">Sustainability</h4>
+                        <p class="fs-5">Reduce post-harvest losses by <strong>15-25%</strong></p>
+                        <p class="text-white-50">Optimized logistics and predictive crop care improve resource efficiency</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 text-center">
+                        <i class="fa fa-repeat" style="font-size: 4rem; color: white; margin-bottom: 1rem; display: block;"></i>
+                        <h4 class="fw-bold mb-3">Scalability</h4>
+                        <p class="fs-5">Replicable model across <strong>all Tier 2/3 districts</strong></p>
+                        <p class="text-white-50">Addresses fragmented land ownership and varied crop landscapes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Meet Our Visionary Team</h2>
+                    <p class="fs-5 text-muted">Dedicated to transforming India's agricultural future</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-lg h-100" style="overflow: hidden; transition: transform 0.3s ease;">
+                        <div class="card-body p-5 text-center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <h4 class="card-title fw-bold mb-2" style="font-size: 1.8rem;">C Ganesh Yadav</h4>
+                            <p class="card-text mb-3" style="color: rgba(255,255,255,0.95); font-size: 1.1rem;">Full-Stack Developer</p>
+                            <p style="font-size: 0.95rem; opacity: 0.95; line-height: 1.6;">Building the digital foundation of AgriConnect 2.0 with cutting-edge technology and innovation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-lg h-100" style="overflow: hidden; transition: transform 0.3s ease;">
+                        <div class="card-body p-5 text-center" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <h4 class="card-title fw-bold mb-2" style="font-size: 1.8rem;">Koppolu Buddha Bhavan</h4>
+                            <p class="card-text mb-3" style="color: rgba(255,255,255,0.95); font-size: 1.1rem;">Full-Stack Developer</p>
+                            <p style="font-size: 0.95rem; opacity: 0.95; line-height: 1.6;">Creating intelligent solutions to bridge the gap between farmers and markets seamlessly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow-lg" style="background: linear-gradient(135deg, #1e7e34 0%, #2d5a3d 50%, #134d1f 100%); color: white; padding: 3rem; border-radius: 20px;">
+                        <h3 class="fw-bold fs-4 mb-3">Our Vision for Bharat</h3>
+                        <p class="fs-5 mb-0">AgriConnect 2.0 offers a robust, feasible, and scalable digital transformation of India's agricultural backbone. We're building a <strong>smarter, safer, and more connected ecosystem</strong>—empowering smallholder farmers with the tools, data, and market access they deserve.</p>
+                        <p class="fs-5 mt-3 mb-0">Join us in revolutionizing agriculture, one farmer at a time. Together, we're not just building a platform—we're building the future of Indian agriculture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center;">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Ready to Transform Agriculture?</h2>
+            <p class="fs-5 mb-4">Join thousands of farmers already benefiting from AgriConnect 2.0's intelligent platform.</p>
+            <a href="{%url 'home'%}" class="btn btn-light btn-lg fw-bold" style="padding: 0.8rem 2rem; border-radius: 50px;">Get Started Today</a>
+        </div>
+    </section>
+
+    </main>
+
+{% endblock %}   
